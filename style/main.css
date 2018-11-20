@@ -33,6 +33,10 @@ img {
 .header__nav{
     clear: left;
 }
+.js .header{
+    position: fixed;
+    width: 100%;
+}
 .header__nav ul{
     margin: 0;
     padding: 0;
@@ -57,6 +61,19 @@ img {
 }
 .header__nav a:hover{
     color: #63c6ae;
+}
+.header__btnMenu{
+    /*display: none;*/
+}
+.header__btnMenu{
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+}
+.js .header__nav{
+    transition: max-height 1s;
 }
 
 .hero{
@@ -264,9 +281,7 @@ img {
         width: 25%;
         box-sizing: border-box;
     }
-    .header__btnMenu{
-        display: none;
-    }
+
     .header__nav{
         float: left;
         width: 75%;
